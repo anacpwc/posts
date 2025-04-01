@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PostService } from '../post.service'; // Verifique o caminho
+import { PostService } from '../post.service'; 
 
 @Component({
   selector: 'app-post',
