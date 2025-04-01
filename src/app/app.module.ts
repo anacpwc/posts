@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MemesComponent } from './memes/memes.component';
-import { provideHttpClient } from '@angular/common/http';
+import { PostComponent } from './post/post.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MemesComponent
+    PostComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgbModule
   ],
-  providers: [provideHttpClient()],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
